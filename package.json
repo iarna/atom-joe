@@ -1,11 +1,10 @@
 {
   "name": "joe-keybinds",
   "main": "./lib/joe",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Rebecca Turner <me@re-becca.org>",
   "description": "Adds joe-style wordstar-like text editing",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": [
       "joe:block-start",
@@ -19,6 +18,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
