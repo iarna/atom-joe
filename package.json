@@ -1,0 +1,24 @@
+{
+  "name": "joe-keybinds",
+  "main": "./lib/joe",
+  "version": "0.0.0",
+  "author": "Rebecca Turner <me@re-becca.org>",
+  "description": "Adds joe-style wordstar-like text editing",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "joe:block-start",
+      "joe:block-end",
+      "joe:block-copy",
+      "joe:block-end"
+    ]
+  },
+  "repository": "https://github.com/iarna/atom-joe",
+  "license": "ISC",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

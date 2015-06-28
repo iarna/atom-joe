@@ -1,0 +1,73 @@
+#missing
+#  ^KA center
+#  ^T options
+#  ^R refresh
+#  ^KF block from file
+#  ^KY block delete
+#  ^K/ block filter
+#  ^KZ shell
+#  ^KI insert file.
+# split windows: focus pane
+#  ^KI show only this buffer
+#  ^KG make this pane bigger
+#  ^KT make this pane smaller
+#  ^KN move to pane below
+#  ^KP move to pane above
+#  ^[V switch to next buffer
+#  ^[U switch to previous buffer
+# macros (everything)
+#
+# todo: block-selection-mode for rectangular selection (ctrl-t x)
+
+'atom-workspace':
+  'ctrl-k b': 'joe:block-start'
+  'ctrl-k k': 'joe:block-end'
+  'ctrl-k ctrl-b': 'joe:block-start'
+  'ctrl-k ctrl-k': 'joe:block-end'
+  'ctrl-k c': 'joe:block-copy'
+  'ctrl-k ctrl-c': 'joe:block-copy'
+  'ctrl-k m': 'joe:block-move'
+  'ctrl-k ctrl-m': 'joe:block-move'
+
+'atom-text-editor':
+  'ctrl-k': 'unset!'
+  'ctrl-u': 'core:page-up'
+  'ctrl-v': 'core:page-down'
+  'ctrl-k u': 'core:move-to-top'
+  'ctrl-k v': 'core:move-to-bottom'
+  'ctrl-k ctrl-u': 'core:move-to-top'
+  'ctrl-k ctrl-v': 'core:move-to-bottom'
+  'ctrl-z': 'editor:move-to-beginning-of-word'
+  'ctrl-x': 'editor:move-to-end-of-word'
+  'ctrl-l': 'find-and-replace:find-next'
+  'ctrl-w': 'editor:delete-to-end-of-word'
+  'ctrl-o': 'editor:delete-to-beginning-of-word'
+  'ctrl-j': 'editor:delete-to-end-of-line'
+  'ctrl-c': 'core:close'
+'body':
+  'ctrl-k s': 'core:save'
+  'ctrl-k ctrl-s': 'core:save'
+  'ctrl-_': 'core:undo'
+  'ctrl-^': 'core:redo'
+  'ctrl-k e': 'application:open'
+  'ctrl-k ctrl-e': 'application:open'
+  'ctrl-k d': 'core:save-as'
+  'ctrl-k ctrl-d': 'core:save-as'
+  'ctrl-k o': 'pane:split-down'
+  'ctrl-k ctrl-o': 'pane:split-down'
+  'ctrl-k i': 'pane:close-other-items'
+  'ctrl-k ctrl-i': 'pane:close-other-items'
+'.platform-darwin, .platform-win32, .platform-linux':
+  'ctrl-k f': 'find-and-replace:show'
+  'ctrl-k ctrl-f': 'find-and-replace:show'
+  'ctrl-k l': 'go-to-line:toggle'
+  'ctrl-k ctrl-l': 'go-to-line:toggle'
+  'ctrl-c': 'core:cancel'
+'atom-text-editor:not([mini])':
+  'ctrl-y': 'editor:delete-line'
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-k .': 'editor:indent-selected-rows'
+  'ctrl-k ,': 'editor:outdent-selected-rows'
+'.platform-darwin atom-text-editor':
+  'ctrl-k j': 'autoflow:reflow-selection'
+  'ctrl-k ctrl-j': 'autoflow:reflow-selection'
